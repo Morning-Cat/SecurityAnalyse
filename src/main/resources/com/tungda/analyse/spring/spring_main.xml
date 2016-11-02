@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+<!-- 读取配置文件的属性 -->
+	<bean id="PropertiesConfigurer"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:com/tungda/analyse/properties/log4j.properties</value>
+                <value>classpath:com/tungda/analyse/properties/mysql_jdbc.properties</value>
+            </list>
+        </property>
+	</bean>
+	
+<!-- c3p0数据源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClassName}" />
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+    </bean>
+
+
+
+</beans>
