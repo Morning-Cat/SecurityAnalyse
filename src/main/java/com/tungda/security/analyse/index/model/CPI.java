@@ -1,5 +1,11 @@
 package com.tungda.security.analyse.index.model;
 
-public class CPI {
+import java.util.Calendar;
 
+public class CPI {
+	//CPI的时间
+	private Calendar time;
+	//CPI的值
+	private double index;
+	
 }

@@ -1,5 +1,5 @@
 package com.tungda.security.analyse.dao;
 
-public class A {
+public interface CompanyDAO {
 
 }

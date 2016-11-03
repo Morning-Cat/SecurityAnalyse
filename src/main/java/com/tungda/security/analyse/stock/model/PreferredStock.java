@@ -1,5 +1,6 @@
 package com.tungda.security.analyse.stock.model;
 
-public class Company {
+//сеох╧и
+public class PreferredStock extends Stock{
 
 }
