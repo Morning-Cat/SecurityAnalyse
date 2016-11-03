@@ -7,7 +7,7 @@ import com.tungda.security.analyse.company.model.Company;
 public class Dividend {
 	private Company company;
 	//公司分红时间
-	private Calendar time;
+	private Calendar divi_time;
 	
 	//公司分红，以每股计算
 	//普通股分红

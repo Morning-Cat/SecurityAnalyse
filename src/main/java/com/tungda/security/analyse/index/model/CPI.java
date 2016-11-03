@@ -4,8 +4,8 @@ import java.util.Calendar;
 
 public class CPI {
 	//CPI的时间
-	private Calendar time;
+	private Calendar cpi_time;
 	//CPI的值
-	private double index;
+	private double cpi_index;
 	
 }
